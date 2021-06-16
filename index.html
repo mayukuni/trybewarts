@@ -23,6 +23,7 @@
       <button id="login-button">Entrar
     </form>
   </header>
+
   <main class = 'main'>
       <form action="" id= 'evaluation-form' class = 'form'>
          <div class='img'>
@@ -41,13 +42,38 @@
                     <option value="corvinode" id='corvinode-house'>Corvinode</option>
                     <option value="pytherina" id='pytherina-house'>Pytherina</option>
                 </select>
-        </div>
             
-    <form action="" id= 'evaluation-form' class = 'form'>
         <label for="family" id="label-family">Qual sua família?</label>
+        <br>
         <input type="radio" name="family" value="Frontend">Frontend
         <input type="radio" name="family" value="Backend">Backend
-        <input type="radio" name="family" value="FullStack">FullStack        
+        <input type="radio" name="family" value="FullStack">FullStack     
+      </div>
+    
+      <div>
+      <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <br>
+        <input type="checkbox" name="content" value="HoFs" class="subject">HoFs
+        <input type="checkbox" name="content" value="Jest" class="subject">Jest
+        <input type="checkbox" name="content" value="Promises" class="subject">Promises
+        <input type="checkbox" name="content" value="React" class="subject">React
+        <input type="checkbox" name="content" value="SQL" class="subject">SQL
+        <input type="checkbox" name="content" value="Python" class="subject">Python
+      </div>
+
+      <div>
+        <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
+        <input type="radio" value="1" name="rate">1
+        <input type="radio" value="2" name="rate">2
+        <input type="radio" value="3" name="rate">3
+        <input type="radio" value="4" name="rate">4
+        <input type="radio" value="5" name="rate">5
+        <input type="radio" value="6" name="rate">6
+        <input type="radio" value="7" name="rate">7
+        <input type="radio" value="8" name="rate">8
+        <input type="radio" value="9" name="rate">9
+        <input type="radio" value="10" name="rate">10
+      </div>
     </form>
   </main>
   <script src="script.js"></script>
