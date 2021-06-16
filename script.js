@@ -11,3 +11,14 @@ function entrar() {
 }
 
 loginButton.addEventListener('click', entrar);
+
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+const maxCaracteres = 500;
+
+function charCounter() {
+  const caracteresRestantes = maxCaracteres - textArea.value.length;
+  counter.textContent = caracteresRestantes;
+}
+
+textArea.addEventListener('input', charCounter);
