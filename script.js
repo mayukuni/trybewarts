@@ -22,3 +22,16 @@ function charCounter() {
 }
 
 textArea.addEventListener('input', charCounter);
+
+const check = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+
+function enableBtn() {
+  if (check.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+check.addEventListener('click', enableBtn);
