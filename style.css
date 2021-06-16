@@ -6,6 +6,7 @@
 
 .form {
   display: flex;
+  flex-direction: column;
   width: 675px;
 }
 
@@ -16,4 +17,10 @@
 .trybewarts-login {
   display: flex;
   align-items: center;
+}
+
+#trybewarts-forms-logo {
+  position: absolute;
+  height: 500px;
+  right: 100px;
 }
