@@ -12,3 +12,9 @@
 .main {
   display: flex;
 }
+
+#trybewarts-forms-logo {
+  position: absolute;
+  height: 500px;
+  right: 100px;
+}
