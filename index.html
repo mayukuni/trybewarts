@@ -28,22 +28,22 @@
          <div class='img'>
              <img src="images/trybewarts-colored.svg" alt="" id = 'trybewarts-forms-logo'>
          </div>
-        
-         <input type="text" id='input-name' placeholder="Nome">
-         <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
-         <input type="text" name="" id="input-email" placeholder="E-mail">
 
-         <select name="" id="house">
-             <option value="gitnoria" id='gitnoria-house'>Gitnória</option>
-             <option value="reactpuff" id='reactpuff-house'>Reactpuff</option>
-             <option value="corvinode" id='corvinode-house'>Corvinode</option>
-             <option value="pytherina" id='pytherina-house'>Pytherina</option>
-         </select>
-
-    <form action="" id= 'evaluation-form' class = 'form'>
-      <div class='img'>
-        <img src="images/trybewarts-colored.svg" alt="" id = 'trybewarts-forms-logo'>
+         <div class = 'box-container'>
+                 
+            <input type="text" id='input-name' placeholder="Nome">
+                <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
+                <input type="text" name="" id="input-email" placeholder="Email">
+                <label for="houses">Casa:</label>
+                <select name="" id="house" class='house'>
+                    <option value="gitnoria" id='gitnoria-house'>Gitnória</option>
+                    <option value="reactpuff" id='reactpuff-house'>Reactpuff</option>
+                    <option value="corvinode" id='corvinode-house'>Corvinode</option>
+                    <option value="pytherina" id='pytherina-house'>Pytherina</option>
+                </select>
         </div>
+            
+    <form action="" id= 'evaluation-form' class = 'form'>
         <label for="family" id="label-family">Qual sua família?</label>
         <input type="radio" name="family" value="Frontend">Frontend
         <input type="radio" name="family" value="Backend">Backend
