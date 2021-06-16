@@ -1,3 +1,7 @@
+* {
+
+}
+
 body {
   margin: 0;
 }
@@ -56,4 +60,13 @@ input {
 #label-infos {
   display: flex;
   flex-wrap: row-reverse wrap;
+}
+
+footer {
+  background-color: rgb(85, 84, 84);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
