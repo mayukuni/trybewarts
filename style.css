@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: lightgray;
-  font-family: 'Mate SC', sans-serif;
+  font-family: Mate SC, sans-serif;
 }
 
 .header {
@@ -19,9 +19,13 @@ input {
   margin: 2px;
 }
 
+header input {
+  margin-right: 5px;
+}
+
 input:focus {
   outline: none;
-  border:1px solid blueviolet;
+  border: 1px solid blueviolet;
   box-shadow: 0 0 2px blueviolet;
 }
 
@@ -31,10 +35,6 @@ input:focus {
   width: 150px;
   border: none;
   margin-bottom: 2px;
-}
-
-header input {
-  margin-right: 5px;
 }
 
 .form {
@@ -79,6 +79,8 @@ header input {
 
 .box-container input {
   margin-bottom: 10px;
+  width: 40%;
+  flex: auto;
 }
 
 .box-container select {
@@ -98,13 +100,8 @@ header input {
 
 .box-container select:focus {
   outline: none;
-  border:1px solid blueviolet;
+  border: 1px solid blueviolet;
   box-shadow: 0 0 2px blueviolet;
-}
-
-.box-container input {
-  width: 40%;
-  flex: auto;
 }
 
 #label-infos {
@@ -195,7 +192,7 @@ hr {
 
 #textarea:focus {
   outline: none;
-  border:1px solid blueviolet;
+  border: 1px solid blueviolet;
   box-shadow: 0 0 2px blueviolet;
 }
 
