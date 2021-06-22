@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Mate+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trybewarts</title>
 </head>
@@ -41,23 +43,24 @@
 
       <div id="preferences">        
         <div class="family">
-          <label for="family" id="label-family">Qual sua família?</label>
-          <br>
-          <input type="radio" name="family" value="Frontend" id="frontEnd">Frontend
-          <br>
-          <input type="radio" name="family" value="Backend" id="backEnd">Backend
-          <br>
-          <input type="radio" name="family" value="FullStack" id="fullStack">FullStack     
+          <label for="family" id="label-family">Qual a sua família?</label>
+          <div id="family-options">
+            <input type="radio" name="family" value="Frontend" id="frontEnd">Família Frontend
+            <input type="radio" name="family" value="Backend" id="backEnd">Família Backend
+            <input type="radio" name="family" value="FullStack" id="fullStack">Família FullStack     
+          </div>
         </div>
         
         <div class="content">
           <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type="checkbox" name="content" value="HoFs" class="subject">HoFs
-          <input type="checkbox" name="content" value="Jest" class="subject">Jest
-          <input type="checkbox" name="content" value="Promises" class="subject">Promises
-          <input type="checkbox" name="content" value="React" class="subject">React
-          <input type="checkbox" name="content" value="SQL" class="subject">SQL
-          <input type="checkbox" name="content" value="Python" class="subject">Python
+          <div id="content-options">
+            <input type="checkbox" name="content" value="HoFs" class="subject">HoFs
+            <input type="checkbox" name="content" value="Jest" class="subject">Jest
+            <input type="checkbox" name="content" value="Promises" class="subject">Promises
+            <input type="checkbox" name="content" value="React" class="subject">React
+            <input type="checkbox" name="content" value="SQL" class="subject">SQL
+            <input type="checkbox" name="content" value="Python" class="subject">Python
+          </div>
         </div>
       </div>
 

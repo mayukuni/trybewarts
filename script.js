@@ -71,12 +71,13 @@ function updFormEmail() {
   divInput.removeChild(inputEmail);
 }
 
-const frontEnd = document.getElementById('frontEnd');
-const backEnd = document.getElementById('backEnd');
-const fullStack = document.getElementById('fullStack');
-const family = document.querySelector('.family');
 const preferences = document.querySelector('#preferences');
+
 function updFamily() {
+  const frontEnd = document.getElementById('frontEnd');
+  const backEnd = document.getElementById('backEnd');
+  const fullStack = document.getElementById('fullStack');
+  const family = document.querySelector('.family');
   preferences.removeChild(family);
   const pfamily = document.createElement('div');
   preferences.appendChild(pfamily);
@@ -89,12 +90,22 @@ function updFamily() {
   }
 }
 
+function updContent() {
+  const content = document.querySelector('.content');
+  preferences.removeChild(content);
+  const pcontent = document.createElement('div');
+  const { text } = content.content[content.selectedIndex];
+  pcontent.innerText = `Matéria: ${text}`;
+  preferences.appendChild(pcontent);
+}
+
 function updtForm() {
   divInput.style.flexDirection = 'column';
   updFormName();
   updFormEmail();
   updHouse();
   updFamily();
+  updContent();
 }
 
 submitBtn.addEventListener('click', stopDefAction, false);

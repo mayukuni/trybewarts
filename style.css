@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: lightgray;
+  font-family: 'Mate SC', sans-serif;
 }
 
 .header {
@@ -14,12 +15,22 @@ body {
 input {
   border-radius: 10px;
   height: 35px;
+  border: none;
+  margin: 2px;
+}
+
+input:focus {
+  outline: none;
+  border:1px solid blueviolet;
+  box-shadow: 0 0 2px blueviolet;
 }
 
 #login-button {
   border-radius: 10px;
-  height: 40px;
+  height: 35px;
   width: 150px;
+  border: none;
+  margin-bottom: 2px;
 }
 
 header input {
@@ -63,12 +74,32 @@ header input {
 .box-container {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+}
+
+.box-container input {
+  margin-bottom: 10px;
 }
 
 .box-container select {
-  width: 302px;
+  width: 291px;
   border-radius: 10px;
-  height: 40px;
+  height: 39px;
+  border: none;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: -5px;
+}
+
+#label-houses {
+  margin-left: 3px;
+  margin-bottom: 7px;
+}
+
+.box-container select:focus {
+  outline: none;
+  border:1px solid blueviolet;
+  box-shadow: 0 0 2px blueviolet;
 }
 
 .box-container input {
@@ -101,6 +132,7 @@ hr {
 #preferences {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -108,11 +140,39 @@ hr {
   flex-wrap: wrap;
   width: 50%;
   align-items: center;
+  flex: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#label-content {
+  margin-bottom: 13px;
+  margin-left: 5px;
+}
+
+#content-options {
+  display: flex;
+  width: 190px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .family {
-  width: 40%;
-  align-self: center;
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#family-options {
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#label-family {
+  margin-right: 10px;
 }
 
 .rate {
@@ -133,6 +193,12 @@ hr {
   border-radius: 10px;
 }
 
+#textarea:focus {
+  outline: none;
+  border:1px solid blueviolet;
+  box-shadow: 0 0 2px blueviolet;
+}
+
 .textarea p {
   margin: 0;
   float: right;
@@ -147,4 +213,8 @@ hr {
 button {
   background-color: blueviolet;
   color: white;
+}
+
+button:disabled {
+  opacity: 70%;
 }
